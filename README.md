@@ -1,12 +1,8 @@
 <h1 align="center">Colorant</h1>
 
-### About
+### Overview
 
-Colorant is an educational project that demonstrates the use of color detection. It also includes an aimbot feature to target and shoot within a specific color range on a screen. The main goal is to detect and interact with the chosen color, aiming and shooting at it.
-
-Implemented in Python, Colorant scans the screen for a defined hsv color range and enables interaction with the identified region. Notably, this process does not involve any manipulation of game memory or files.
-
-The project's primary aim is to serve as a proof of concept, illustrating the potential of computer vision in interacting with real-time screen data.
+Colorant is a Python-based project built for educational purposes, showcasing real-time color-based object tracking using computer vision techniques. The project interacts with hardware components such as Arduino, adding an extra layer of security.
 
 ---
 ![image](https://github.com/hafyzwithawhy/Colorant/assets/82477000/5e00264d-d4d9-461d-a87d-501cc6e50217)
@@ -16,21 +12,21 @@ The project's primary aim is to serve as a proof of concept, illustrating the po
 [![Language][language-shield]][language-link]
 [![License][license-shield]][license-link]
 
-## Getting started
+## Components
 
-#### You will need the following prerequisites:
-- [ARDUINO LEONARDO](https://www.amazon.com/Arduino-org-A000057-Arduino-Leonardo-Headers/dp/B008A36R2Y)
-- [USB HOST SHIELD](https://www.amazon.com/Compatible-Arduino-Support-Android-Function/dp/B0B3TH6H6N)
+### The Colorant project comprises several Python files:
 
-Setting up initially might pose a challenge as it requires Arduino and USB host shield setup. Keep in mind that some USB shields may be delivered unsoldered, requiring you to solder both 5V ports and the bottom 3.3V port to ensure proper operation. If you need more guidance, refer to [THIS](https://www.youtube.com/watch?v=nBttwvgNOr8) video.
+- main.py: This is the main executable of the application that initiates the color tracking process and manages key events.
 
-Subsequently, download and install Python, ideally [Version 3.8](https://www.python.org/ftp/python/3.8.0/python-3.8.0-amd64.exe) as it was the development version for this project. Once Python is installed, download Colorant and install necessary dependencies using `pip install -r the-requirements.txt`.
+- colorant.py: Houses the Colorant class, which manages image processing and color tracking tasks.
 
-To enable Arduino board to function as a computer mouse, choose from the five different sketches provided in the [ArduinoSketches](https://github.com/hafyzwithawhy/Colorant/tree/main/ArduinoSketches) folder. Plug the Arduino board into your computer and open the Arduino IDE software. Select the suitable board and port and upload your chosen sketch. Following these instructions will convert your Arduino board into a working computer mouse, enabling cursor control and click functionalities through the board's hardware. Try out each of the five sketches to find out which suits your mouse best.
+- other.py: Contains the Mouse and Settings classes for Arduino communication and settings configuration, respectively. The Capture class responsible for screen capture operations is also defined here.
 
-Bear in mind that if you chose a sketch other than 1Arduino, you might need to configure move and click functions for compatibility with your Arduino sketch. The Colorant code is optimized for the 1Arduino sketch, so other sketches may require modifications.
+- settings.ini: TA configuration file that stores various settings for colorant.
 
-With the required software and dependencies installed, execute the main.py file, the main entry point for the program. No code modifications are needed, and it's ready for use.
+## Installation
+
+You can either clone the repository and run the Python script directly, or you can [download](https://github.com/hafyzwithawhy/Colorant/releases/latest) the precompiled executable from the releases page. The latest release is v1.0, released on 23 May 2023. This version is compiled into an executable for easier usage, and it doesn't require Python or any dependencies to be installed.
 
 ## Assistance
 
@@ -40,9 +36,9 @@ If you need help or have questions about Colorant, consider joining the communit
 
 ## Contributing
 
-Contributions are welcome from the community, and if you have any suggestions or encounter any issues, please do not hesitate to open an [issue](https://github.com/hafyzwithawhy/Colorant/issues) in the repository and provide as much detail as possible. Additionally, if you find this project helpful or interesting, please give it a ⭐.
+Contributions are welcome! Feel free to fork the project and submit a pull request with your changes. Additionally, if you find this project helpful or interesting, please give it a ⭐.
 
-I'd like to acknowledge and credit the program Firepro, which has been a significant inspiration for Project Colorant. Additionally, I want to clarify that the Arduino sketches included in this project were not created by me.
+I'd like to acknowledge and credit the program Firepro, which has been a significant inspiration for Project Colorant.
 
 ## Disclaimer
 > **Warning** **Educational Use Only**
