@@ -22,11 +22,25 @@ Colorant is a Python-based project built for educational purposes, showcasing re
 
 - other.py: Contains the Mouse and Settings classes for Arduino communication and settings configuration, respectively. The Capture class responsible for screen capture operations is also defined here.
 
-- settings.ini: TA configuration file that stores various settings for colorant.
+- settings.ini: The configuration file that stores various settings for colorant.
 
-## Installation
+## Getting Started
+### Prerequisites
+For the mouse movement functionality of Colorant, an Arduino Leonardo is required. You can purchase it from [Amazon](https://www.amazon.com/Arduino-Leonardo-ATmega32U4-without-headers/dp/B008A36R2Y) or any local store in your region.
 
-You can either clone the repository and run the Python script directly, or you can [download](https://github.com/hafyzwithawhy/Colorant/releases/latest) the precompiled executable from the releases page. The latest release is v1.0, released on 23 May 2023. This version is compiled into an executable for easier usage, and it doesn't require Python or any dependencies to be installed.
+### Installation
+
+You can either clone the repository and run the Python script directly, or you can download the precompiled executable from the releases page. The latest release is v1.0, released on 26 May 2023. This version is compiled into an executable for easier usage, and it doesn't require Python or any dependencies to be installed.
+
+For the Python Script Version:
+1. Clone the repository or download it directly.
+2. Navigate into the project directory.
+3. Run the main script: `python main.py`.
+
+For the Executable Version:
+1. Download the latest release from the [releases page](https://github.com/hafyzwithawhy/Colorant/releases/latest).
+2. Unzip the downloaded file.
+3. Run the SetupColorant.exe setup executable then Colorant.exe to start using colorant.
 
 ## Assistance
 
